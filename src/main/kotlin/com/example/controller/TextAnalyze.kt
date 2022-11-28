@@ -15,7 +15,12 @@ class textAnalyze {
 @Post("/analyze")
 @Produces(MediaType.TEXT_PLAIN)
     fun analyzeText(@Body request: TextData): String {
-          return request.content
+         println(request.getWordCount())
+         println(request.getCharCountWithSpaces())
+         println(request.getCharCountWithoutSpaces())
+         println(request.getLineCount())
+         println(request.getUniqueWordCount())
+        return request.content
     }
 
 }
