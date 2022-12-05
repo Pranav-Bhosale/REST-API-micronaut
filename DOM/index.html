@@ -18,12 +18,20 @@
                   placeholder="Your text..."
           >
           </textarea><br><br>
-          <button class="main-analyze-button" onclick="onAnalyzeButtonClick()">Analyze</button>
+          <button class="main-analyze-button" type="button" onclick="onAnalyzeButtonClick()">Analyze</button>
       </section>
       <section class="main-result">
-          <p id="main-result-block" class="main-result-block invisible">
-              <span>Result:</span>
-              <span id="result"></span>
+          <p id="main-result-block" class="main-result-block">
+              <span>Result:</span><br>
+              <span id="result">
+                <table>
+                  <tr><td>Word Count</td><td id="word-count"></td></tr>
+                  <tr><td>Character count with spaces</td><td id="total-char-count"></td></tr>
+                  <tr><td>Character count without spaces</td><td id="char-count"></td></tr>
+                  <tr><td>Line Count</td><td id="line-count"></td></tr>
+                  <tr><td>Unique Words</td><td id="unique-words"></td></tr>
+                </table>
+              </span>
           </p>
       </section>
   </div>

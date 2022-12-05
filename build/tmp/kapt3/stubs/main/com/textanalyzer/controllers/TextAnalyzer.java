@@ -10,11 +10,11 @@ public final class TextAnalyzer {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     @io.micronaut.http.annotation.Produces(value = {"text/json"})
     @io.micronaut.http.annotation.Post(value = "/analyze")
-    public final io.micronaut.http.HttpResponse<com.textanalyzer.models.AnalyzerResponse> analyze(@org.jetbrains.annotations.NotNull()
-    @io.micronaut.http.annotation.Body()
+    public final io.micronaut.http.HttpResponse<com.textanalyzer.models.AnalyzerResponse> analyze(@org.jetbrains.annotations.NotNull
+    @io.micronaut.http.annotation.Body
     com.textanalyzer.models.TextInput body) {
         return null;
     }

@@ -10,9 +10,9 @@ public final class HelloController {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     @io.micronaut.http.annotation.Produces(value = {"text/plain"})
-    @io.micronaut.http.annotation.Get()
+    @io.micronaut.http.annotation.Get
     public final java.lang.String index() {
         return null;
     }
