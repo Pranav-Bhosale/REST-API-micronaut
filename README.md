@@ -40,4 +40,4 @@
 
 ## Demo
 
-<img src="../UI.jpg">
+<img src="UI.jpg">
