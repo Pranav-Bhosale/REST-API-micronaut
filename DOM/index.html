@@ -7,34 +7,33 @@
   <!-- Import our css styles -->
 </head>
 <body>
-  <div class="main">
-      <h2 class="main-header"><br>TEXT ANALYZER<br><br></h2><br><br>
-      <section class="main-input-comment">
-          <h3><label for="comment">TYPE YOUR TEXT BELOW:</label></h3><br><br>
+    <h2><br>TEXT ANALYZER<br></h2>
+    <div class="main">
+      <section>
+          <h3><label for="comment">Your text goes below:</label></h3>
           <textarea
                   name="comment"
                   id="comment"
-                  class="main-comment-area"
                   placeholder="Your text..."
           >
           </textarea><br><br>
-          <button class="main-analyze-button" type="button" onclick="onAnalyzeButtonClick()">Analyze</button>
+          <button type="button" onclick="onAnalyzeButtonClick()">Analyze</button>
       </section>
-      <section class="main-result">
-          <p id="main-result-block" class="main-result-block">
-              <span>Result:</span><br>
+      <section>
+          
+              <h3>Result:</h3>
               <span id="result">
                 <table>
-                  <tr><td>Word Count</td><td id="word-count"></td></tr>
-                  <tr><td>Character count with spaces</td><td id="total-char-count"></td></tr>
-                  <tr><td>Character count without spaces</td><td id="char-count"></td></tr>
-                  <tr><td>Line Count</td><td id="line-count"></td></tr>
-                  <tr><td>Unique Words</td><td id="unique-words"></td></tr>
+                  <tr><td class="tr-start">Word Count</td><td class="tr-end" id="word-count">0</td></tr>
+                  <tr><td class="tr-start">Character count with spaces</td><td class="tr-end" id="total-char-count">0</td></tr>
+                  <tr><td class="tr-start">Character count without spaces</td><td class="tr-end" id="char-count">0</td></tr>
+                  <tr><td class="tr-start">Line Count</td><td class="tr-end" id="line-count">0</td></tr>
+                  <tr><td class="tr-start">Unique Words</td><td class="tr-end" id="unique-words">0</td></tr>
                 </table>
               </span>
-          </p>
+          
       </section>
-  </div>
+    </div>
   <!-- Import our javascript file -->
   <script src="text-processing.js"></script>
 </body>

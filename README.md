@@ -33,3 +33,11 @@
 ## Built with
 
 - [Micronaut](https://github.com/micronaut-projects/micronaut-core)
+
+## Run webpage
+
+- Open ./DOM/index.html file in browser
+
+## Demo
+
+<img src="../UI.jpg">

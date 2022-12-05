@@ -44,22 +44,18 @@ const analyzeComment = (comment, callback) => {
 
 const handleEmptyComment = () => {
   const resultBlockElement = document.getElementById('main-result-block');
-  resultBlockElement.classList.add('invisible');
+ 
   return alert('Add text to analyze!');
 };
 
 const displayResult = () => {
   // Remove invisible class for main-result-block
-  const resultBlockElement = document.getElementById('main-result-block');
-  resultBlockElement.classList.remove('invisible');
+
   const result = JSON.parse(localStorage.getItem("text-analyzer-result"));
   
   console.log(result,result.word_count)
   // Setting the color of the result text depending on the response label
-  const label = resultBlockElement.label;
-  const resultElement = document.getElementById('result');
-  resultElement.setAttribute('class', label);
-
+  
   const row1 = document.getElementById('word-count');
   row1.textContent = result["word_count"];
 
@@ -74,5 +70,7 @@ const displayResult = () => {
 
   const row5 = document.getElementById('unique-words');
   row5.textContent = result["unique_words"]
+
+  localStorage.removeItem("text-analyzer-result");
 
 };

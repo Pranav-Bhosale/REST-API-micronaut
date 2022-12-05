@@ -1,69 +1,73 @@
-* {
-  font-family: "Comic Sans MS", cursive;
-  font-family: "Arial", Arial, sans-serif;
-  
-  font-weight: 400;
-  background: rgb(183,217,241);
-background: radial-gradient(circle, rgba(183,217,241,1) 0%, rgba(147,184,198,1) 100%);
-
-}
 body {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(90deg,#766DFF,#88F2FF);
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 15px;
+  color: black;
+  text-align: center;
 }
-label, textarea {
-  display: block;
+
+section {
+  text-align: left;
+  width: 50%;
 }
+
 .main {
-  padding: 10px;
-  width: 95%;
- 
+  display: flex;
 }
-.main-header {
-  width: 100%;
-  text-align: center;
-  font-size: 25px;
-  color: #5e9aa6;
-  margin-bottom: 20px;
-  text-shadow: 3px 3px 3px #ababab;
-}
-.main-input-comment { 
-  margin-bottom: 20px; 
-  color: white;
-  text-align: left;
-  text-shadow: 1px 1px 1px #ababab;
-}
-.main-comment-area {
-  width: 98%;
-  border: white 3px solid;
+
+textarea {
+  padding: 2%;
+  margin: 0.5%;
+  width: 80%;
   border-radius: 10px;
-  resize: none;
-  text-align: left;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: white;
-}
-.main-analyze-button {
-  width: 100%;
-  padding: 5px;
-  border: 2px solid white;
-  border-radius: 7px;
-  color: #5e9aa6;
-  text-align: center;
-  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: 'Roboto Condensed', sans-serif;
+  border: none;
+  height: 80%;
   outline: none;
 }
-.main-analyze-button::-moz-focus-inner {border: 0;}
-.main-analyze-button:hover {
-  background-color: #8264b5;
-  border-color: white;
-  cursor: pointer;
+
+button:hover {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
 }
-.main-result-block { text-align: center; }
-.pos { color: green; }
-.neg { color: darkred; }
-.neutral { color: gray }
-.invisible { display: none; }
+
+button {
+  background-color: transparent;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1%;
+  margin: 0.5%;
+  transition-duration: 0.4s;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #000000;
+}
+
+table {
+  border-spacing: 0 15px;
+  padding: 2%;
+  width: 100%;
+}
+
+table tr {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+table .tr-start {
+  border-radius: 15px 0 0 15px;
+}
+
+table .tr-end {
+  border-radius: 0 15px 15px 0;
+}
+
+table td {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  padding: 1%;
+}
