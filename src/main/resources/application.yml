@@ -1,7 +1,14 @@
 micronaut:
   application:
     name: restAPI
+  server:
+    port: 8082
+    cors:
+      enabled: true
+
 netty:
   default:
     allocator:
       max-order: 3
+
+
